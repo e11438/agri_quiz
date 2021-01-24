@@ -1,4 +1,4 @@
-const CLASS_ITEMS = [
+export const CLASS_ITEMS = [
     {
         id :   'class_10',
         value : '10 වසර'
@@ -9,7 +9,7 @@ const CLASS_ITEMS = [
     }
 ];
 
-const GRADE_11_CHAPTERS = [
+export const GRADE_11_CHAPTERS = [
 
     {
         id: 'chapter_1',
@@ -23,7 +23,7 @@ const GRADE_11_CHAPTERS = [
     }
 ];
 
-const GRADE_10_CHAPTERS = [
+export const GRADE_10_CHAPTERS = [
 
     {
         id: 'chapter_1',

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+
+import {GRADE_11_CHAPTERS, GRADE_10_CHAPTERS} from '../../models/globaldata';
 
 @Component({
   selector: 'app-model-questions',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelQuestionsPage implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute : ActivatedRoute) { }
 
   ngOnInit() {
+
   }
 
 }

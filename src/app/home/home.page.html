@@ -11,10 +11,17 @@
 
   <ion-item>
     <ion-label>පන්තිය</ion-label>
-    <ion-select value="11 වසර">
-      <ion-select-option value="cat">11 වසර</ion-select-option>
-      <ion-select-option value="dog">10 වසර</ion-select-option>
+    
+    <ion-select  [(ngModel)]="grade" name="className" ngDefaultControl >
+      <ion-select-option *ngFor="let class of classItems" [value]="class.id">{{class.value}}</ion-select-option>      
     </ion-select>
+    
+<!--
+    <select class="form-control form-control-sm" [(ngModel)]="grade" name="select">
+      <option *ngFor="let class of classItems" [ngValue]="class.id" >{{class.value}}</option>
+    </select>
+    -->
+
   </ion-item>
 
 
