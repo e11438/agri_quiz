@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./pass-papers/pass-papers.module').then( m => m.PassPapersPageModule)
   },
   {
-    path: 'model-questions',
+    path: 'model-questions/:grade',
     loadChildren: () => import('./model-questions/model-questions.module').then( m => m.ModelQuestionsPageModule)
   },
 ];

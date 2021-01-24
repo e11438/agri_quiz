@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let chap of chapters" >
+      {{chap.name}}
+    </ion-item>
+  </ion-list>
 </ion-content>

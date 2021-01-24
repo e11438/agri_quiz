@@ -30,7 +30,7 @@ export class HomePage {
 
   goToModelQuestions(){
     console.log("Grade selected - " + this.grade);
-    this.router.navigate(['/model-questions']);
+    this.router.navigate(['/model-questions/' + this.grade]);
   }
 
 }
