@@ -1,0 +1,7 @@
+{
+  "name": "agri_quiz",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
