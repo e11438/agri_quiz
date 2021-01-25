@@ -3,13 +3,13 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>අනුමාන ප්‍රශ්න</ion-title>
+    <ion-title>පරිච්ඡේද</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let chap of chapters" >
+    <ion-item inset="true" *ngFor="let chap of chapters"  (click)= "goToChapterQuestions(chap.file)">
       {{chap.name}}
     </ion-item>
   </ion-list>

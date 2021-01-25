@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ModelQuestionsPage
+  },
+  {
+    path: 'question-page/:qfile',
+    loadChildren: () => import('./question-page/question-page.module').then( m => m.QuestionPagePageModule)
   }
 ];
 

@@ -12,7 +12,7 @@
   <ion-item>
     <ion-label>පන්තිය</ion-label>
     
-    <ion-select  [(ngModel)]="grade" name="className" ngDefaultControl >
+    <ion-select  [(ngModel)]="grade" name="className" ngDefaultControl interface="popover">
       <ion-select-option *ngFor="let class of classItems" [value]="class.id">{{class.value}}</ion-select-option>      
     </ion-select>
     
@@ -22,7 +22,7 @@
     </select>
     -->
 
-  </ion-item>
+  </ion-item> 
 
 
 
